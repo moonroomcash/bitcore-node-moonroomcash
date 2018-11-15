@@ -7,12 +7,12 @@ sudo apt-get install \
       autoconf libtool ncurses-dev unzip git python \
       zlib1g-dev wget bsdmainutils automake curl
 
-# zelcashBitcore
+# moonroomcashBitcore
 cd
-git clone -b Bitcore https://github.com/zelcash/zelcash.git zelcashBitcore
-cd zelcashBitcore
+git clone -b Bitcore https://github.com/moonroomcash/moonroomcash.git moonroomcashBitcore
+cd moonroomcashBitcore
 ./zcutil/fetch-params.sh
 ./zcutil/build.sh -j$(nproc)
 cd
-echo "Zelcashd with extended RPC functionalities is prepared. Please run following command to install insight explorer for zelcash"
-echo "wget -qO- https://raw.githubusercontent.com/TheTrunk/bitcore-node-zelcash/master/installExplorer.sh | bash"
+echo "Moonroomcashd with extended RPC functionalities is prepared. Please run following command to install insight explorer for moonroomcash"
+echo "wget -qO- https://raw.githubusercontent.com/moonroomcash/bitcore-node-moonroomcash/master/installExplorer.sh | bash"
