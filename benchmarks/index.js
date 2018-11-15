@@ -48,7 +48,7 @@ bitcoind.start(function(err) {
 
 bitcoind.on('ready', function() {
 
-  console.log('ZelCash ready');
+  console.log('MoonroomCash ready');
 
   var client = new bitcoin.Client({
     host: 'localhost',
