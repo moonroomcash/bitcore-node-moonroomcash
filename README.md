@@ -1,22 +1,22 @@
-Bitcore Node ZelCash
+Bitcore Node MoonroomCash
 ============
 
-A ZelCash full node for building applications and services with Node.js. A node is extensible and can be configured to run additional services. Additional services can be enabled to make a node more useful such as exposing new APIs, running a block explorer and wallet service.
+A Moonroomcash full node for building applications and services with Node.js. A node is extensible and can be configured to run additional services. Additional services can be enabled to make a node more useful such as exposing new APIs, running a block explorer and wallet service.
 
 ## Explorer Guide
-### Part 1. Zelcash with extended RPC functionalities
+### Part 1. Moonroomcash with extended RPC functionalities
 ```bash
-wget -qO- https://raw.githubusercontent.com/TheTrunk/bitcore-node-zelcash/master/installZelcashd.sh | bash
+wget -qO- https://raw.githubusercontent.com/moonroomcash/bitcore-node-moonroomcash/master/installZelcashd.sh | bash
 ```
-### Part 2. Latest Zelcash insight explorer = bitcore-node-zelcash with insight-api and insight-ui
+### Part 2. Latest Moonroomcash insight explorer = bitcore-node-moonroomcash with insight-api and insight-ui
 ```bash
-wget -qO- https://raw.githubusercontent.com/TheTrunk/bitcore-node-zelcash/master/installExplorer.sh | bash
+wget -qO- https://raw.githubusercontent.com/moonroomcash/bitcore-node-moonroomcash/master/installExplorer.sh | bash
 ```
 ## Install
 
 ```bash
-git clone https://github.com/TheTrunk/bitcore-node-zelcash.git
-cd bitcore-node-zelcash
+git clone https://github.com/moonroomcash/bitcore-node-zelcash.git
+cd bitcore-node-moonroomcash
 npm install
 bitcore-node start
 ```
