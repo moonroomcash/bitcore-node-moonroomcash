@@ -18,12 +18,12 @@ sudo service mongod start
 
 #bitcore-node-zelcash
 cd
-git clone https://github.com/TheTrunk/bitcore-node-zelcash
-cd bitcore-node-zelcash
+git clone https://github.com/moonroomcash/bitcore-node-moonroomcash
+cd bitcore-node-moonroomcash
 npm install
 cd bin
 chmod +x bitcore-node
-cp ~/zelcashBitcore/src/zelcashd ~/bitcore-node-zelcash/bin
+cp ~/moonroomcashBitcore/src/moonroomcashd ~/bitcore-node-moonroomcash/bin
 ./bitcore-node create mynode
 cd mynode
 
@@ -49,9 +49,9 @@ cat << EOF > bitcore-node.json
       "sendTxLog": "./data/pushtx.log",
       "spawn": {
         "datadir": "./data",
-        "exec": "../zelcashd",
+        "exec": "../moonroomcashd",
         "rpcqueue": 1000,
-        "rpcport": 16124,
+        "rpcport": 16224,
         "zmqpubrawtx": "tcp://127.0.0.1:28332",
         "zmqpubhashblock": "tcp://127.0.0.1:28332"
       }
@@ -61,7 +61,7 @@ cat << EOF > bitcore-node.json
                  "db": {
                    "host": "127.0.0.1",
                    "port": "27017",
-                   "database": "zelcash-api-livenet",
+                   "database": "moonroomcash-api-livenet",
                    "user": "",
                    "password": ""
           },
@@ -76,7 +76,7 @@ cat << EOF > bitcore-node.json
 EOF
 
 cd data
-cat << EOF > zelcash.conf
+cat << EOF > moonroomcash.conf
 server=1
 whitelist=127.0.0.1
 txindex=1
@@ -87,8 +87,8 @@ zmqpubrawtx=tcp://127.0.0.1:28332
 zmqpubhashblock=tcp://127.0.0.1:28332
 rpcport=16124
 rpcallowip=127.0.0.1
-rpcuser=zelcash
-rpcpassword=myzelcashpassword
+rpcuser=moonroomcash
+rpcpassword=mymoonroomcashpassword
 uacomment=bitcore
 mempoolexpiry=24
 rpcworkqueue=1100
@@ -97,10 +97,9 @@ dbcache=1000
 maxtxfee=1.0
 dbmaxfilesize=64
 showmetrics=0
-addnode=explorer.zel.cash
-addnode=explorer2.zel.cash
-addnode=explorer.zelcash.online
-addnode=explorer.zel.zeltrez.io
+addnode=178.128.104.155
+addnode=173.249.16.174
+addnode=159.65.5.103
 EOF
 
 cd ..
